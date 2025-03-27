@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events Calendar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="layout.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="responsive.html" rel="responsive">
+</head>
+<body>
+    <header class="flex items-center justify-between sticky top-0"> 
+        <div class="flex items-center">
+            <!-- Logo Image (using img tag for better control) -->
+            <img src="img\uob-logo.png" 
+                 alt="UOB Logo"
+                 class="w-14 h-14 object-contain mr-3">  <!-- Adjust width/height as needed -->
+            <h1 class="text-xl font-bold ">UoB Students' Hub</h1>
+        </div>
+
+        <div class="navg flex-1">
+            <nav class="md:relative">
+                <div class="max-w-4xl">
+                    <div class="flex gap-6 ">
+                        <a href="#" class="flex flex-col items-center py-3 px-10 relative group overflow-hidden">
+                          <!-- Text Content (above the square) -->
+                          <span class="text-sm relative z-10 text-[#ffffff]  font-bold " >Home</span>
+                          
+                          <!-- Red Square Background -->
+                          <div class="absolute inset-0 bg-[#170908] transform -translate-x-full 
+                                      opacity-0 group-hover:opacity-100 group-hover:translate-x-0 
+                                      transition-all duration-300 z-0"></div>
+                          
+                          <!-- Bottom Line Indicator -->
+                          <span class="absolute bottom-2 left-1/2 w-0 h-[1px] bg-[#f7dbdb] 
+                          transform -translate-x-1/2
+                          transition-all duration-300 group-hover:w-3/4"></span>
+                        </a>
+
+                        <div class="relative group"> <!-- Parent container must be relative -->
+                            <a href="#" class="flex flex-col items-center py-3 px-10 relative group overflow-hidden cursor-pointer">
+                            <span class="text-sm relative z-10 text-[#ffffff] font-bold">Menu</span>
+                            <div class="absolute inset-0 bg-[#170908] transform -translate-x-full opacity-0 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300 z-0"></div>
+                            <span class="absolute bottom-2 left-1/2 w-0 h-[1px] bg-[#f7dbdb] transform -translate-x-1/2 transition-all duration-300 group-hover:w-3/4"></span>
+                            </a>
+                             
+                              <!-- Dropdown Menu (positioned below button) -->
+                            <div class="absolute left-1/2 transform -translate-x-1/2 mt-3 w-48 bg-[#170908] text-white z-10 rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                            <a href="#" class="block py-2 px-4 hover:bg-[#f7dbdb] hover:text-[#170908] transition-colors border-b border-[#f7dbdb]/10">Events Calendar</a>
+                            <a href="#" class="block py-2 px-4 hover:bg-[#f7dbdb] hover:text-[#170908] transition-colors border-b border-[#f7dbdb]/10">Study Group Finder</a>
+                            <a href="#" class="block py-2 px-4 hover:bg-[#f7dbdb] hover:text-[#170908] transition-colors border-b border-[#f7dbdb]/10">Course Reviews</a>
+                            <a href="#" class="block py-2 px-4 hover:bg-[#f7dbdb] hover:text-[#170908] transition-colors border-b border-[#f7dbdb]/10">Course Notes</a>
+                            <a href="#" class="block py-2 px-4 hover:bg-[#f7dbdb] hover:text-[#170908] transition-colors border-b border-[#f7dbdb]/10">Campus News</a>
+                            <a href="#" class="block py-2 px-4 hover:bg-[#f7dbdb] hover:text-[#170908] transition-colors border-b border-[#f7dbdb]/10">Club Activities</a>
+                            <a href="#" class="block py-2 px-4 hover:bg-[#f7dbdb] hover:text-[#170908] transition-colors">Student Marketplace</a>
+                            </div>
+                            </div>
+
+                        <a href="#" class="flex flex-col items-center py-3 px-10 relative group overflow-hidden">
+                          <!-- Text Content (above the square) -->
+                          <span class="text-sm relative z-10 text-[#ffffff] font-bold ">Profile</span>
+                          
+                          <!-- Red Square Background -->
+                          <div class="absolute inset-0 bg-[#170908] transform -translate-x-full 
+                                      opacity-0 group-hover:opacity-100 group-hover:translate-x-0 
+                                      transition-all duration-300 z-0"></div>
+                          
+                          <!-- Bottom Line Indicator -->
+                          <span class="absolute bottom-2 left-1/2 w-0 h-[1px] bg-[#f7dbdb] 
+                          transform -translate-x-1/2
+                          transition-all duration-300 group-hover:w-3/4"></span>
+                        </a>
+                        
+                        
+                        <a href="#" class="flex flex-col items-center py-3 px-10 relative group overflow-hidden">
+                          <!-- Text Content (above the square) -->
+                          <span class="text-sm relative z-10 text-[#ffffff] font-bold  ">Help</span>
+                          
+                          <!-- Red Square Background -->
+                          <div class="absolute inset-0 bg-[#170908] transform -translate-x-full 
+                                      opacity-0 group-hover:opacity-100 group-hover:translate-x-0 
+                                      transition-all duration-300 z-0"></div>
+                          
+                          <!-- Bottom Line Indicator -->
+                          <span class="absolute bottom-2 left-1/2 w-0 h-[1px] bg-[#f7dbdb] 
+                          transform -translate-x-1/2
+                          transition-all duration-300 group-hover:w-3/4"></span>
+                        </a>
+                      </div>
+                </div>
+              </nav>
+              
+              <div class="pb-16 md:pb-0"></div>
+        </header>
+        <main>
+            <h2>
+                you can add your work here
+            </h2>
+        </main>
+
+        <footer class=" text-white p-6">
+            <div class="container mx-auto">
+              <!-- Main Footer Content -->
+              <div class="flex flex-col md:flex-row gap-8 mb-6">
+                <!-- Contact Info -->
+                <div class="md:w-1/3">
+                  <h2 class="text-xl font-bold mb-4">Contact</h2>
+                  <ul class="space-y-2">
+                    <li>Sakheer Campus, Road No.2815</li>
+                    <li>Postal code is 32038</li>
+                    <li>Call us: +937-66630104</li>
+                    <li>Email: Kuuudere@gmail.com</li>
+                  </ul>
+                </div>
+          
+                <!-- Useful Links -->
+                <div class="md:w-1/3">
+                  <h2 class="text-xl font-bold mb-4">Useful Links</h2>
+                  <ul class="space-y-2">
+                    <li><a href="#" class="hover:text-[#f80000]">Home</a></li>
+                    <li><a href="#" class="hover:text-[#f80000]">Support</a></li>
+                    <li><a href="#" class="hover:text-[#f80000]">Staff</a></li>
+                    <li><a href="#" class="hover:text-[#f80000]">UoB Library</a></li>
+                    <li><a href="#" class="hover:text-[#f80000]">Documentation</a></li>
+                  </ul>
+                </div>
+          
+                <!-- Newsletter & Social -->
+                <div class="md:w-1/3">
+                  <h2 class="text-xl font-bold mb-4">Newsletter</h2>
+                  <form class="mb-4">
+                    <div class="flex">
+                      <input type="text" placeholder="Your email" class="px-4 py-2 rounded-l w-full">
+                      <button type="submit" class="bg-blue-600 hover:bg-[#f80000] px-4 py-2 rounded-r">Search</button>
+                    </div>
+                  </form>
+          
+                  <div class="flex space-x-4">
+                    <a href="#" class="hover:text-[#f80000]">Facebook</a>
+                    <a href="#" class="hover:text-[#f80000]">Twitter</a>
+                    <a href="#" class="hover:text-[#f80000]">YouTube</a>
+                    <a href="#" class="hover:text-[#f80000]">Instagram</a>
+                  </div>
+                </div>
+              </div>
+          
+              <!-- Footer Bottom -->
+              <div class="border-t border-gray-700 pt-4 text-center text-sm">
+                <p>All rights reserved by &copy; Team2.co</p>
+              </div>
+            </div>
+          </footer>
+</body>
