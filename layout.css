@@ -38,15 +38,9 @@ footer {
     padding: 0;          
     margin: 0;
     margin-left: 6em;
-    position: relative;
    
 }
- 
-.nav-buttons {
-    position: absolute;
-    bottom: 2em;
-    left: 108.55em;
-}
+
 
 
 
