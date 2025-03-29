@@ -5,25 +5,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Campus Hub | Home</title>
     <link href="layout.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
 </head>
 <body>
-    
     <!--header-->
-    <header>
-        <div class="header-container">
-            <img src="uob-logo.png" alt="University of Bahrain Logo" class="Logo" title="UOB Logo">
-            <!--Navigation Links-->
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="layout.html" class="active"><i class="fa-solid fa-house"></i> Home</a></li>
-                    <li><a href=""><i class="fa-solid fa-calendar-days"></i> Events</a></li>
-                    <li><a href=""><i class="fas fa-users"></i> Groups</a></li>
-                    <li><a href=""><i class="fa-solid fa-book"></i> Courses</a></li>
-                    <li><a href="CampusNews.html"><i class="fa-solid fa-newspaper"></i> News</a></li>
-                </ul>
-            </nav>
+    <header class="flex items-center justify-between sticky top-0 z-50 px-4 py-2 shadow-sm"> 
+        <div class="flex items-center">
+            <!-- Logo Image -->
+            <img src="uob-logo.png" 
+                    alt="UOB Logo"
+                    class="w-14 h-14 object-contain mr-3">
+            <h1 class="text-xl font-bold ">UoB Students' Hub</h1>
         </div>
+
+    <div class="hidden md:block flex-1 px-10">
+        <nav class="md:relative">
+            <div class="max-w-4xl">
+                <div class="flex gap-6 ">
+                    <a href="#" class="flex flex-col items-center py-3 px-10 relative group overflow-hidden">
+                        <!-- Text Content  -->
+                        <span class="text-sm relative z-10 text-[#ffffff]  font-bold " >Home</span>
+                        
+                        <!-- Red Square Background -->
+                        <div class="absolute inset-0 bg-[#170908] transform -translate-x-full 
+                                    opacity-0 group-hover:opacity-100 group-hover:translate-x-0 
+                                    transition-all duration-300 z-0"></div>
+                        
+                        <!-- Bottom Line Indicator -->
+                        <span class="absolute bottom-2 left-1/2 w-0 h-[1px] bg-[#f7dbdb] 
+                        transform -translate-x-1/2
+                        transition-all duration-300 group-hover:w-3/4"></span>
+                    </a>
+
+                    <div class="relative group"> <!-- Parent container must be relative -->
+                        <a href="#" class="flex flex-col items-center py-3 px-10 relative group overflow-hidden cursor-pointer">
+                        <span class="text-sm relative z-10 text-[#ffffff] font-bold">Menu</span>
+                        <div class="absolute inset-0 bg-[#170908] transform -translate-x-full opacity-0 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300 z-0"></div>
+                        <span class="absolute bottom-2 left-1/2 w-0 h-[1px] bg-[#f7dbdb] transform -translate-x-1/2 transition-all duration-300 group-hover:w-3/4"></span>
+                        </a>
+                            
+                            <!-- Dropdown Menu (positioned below button) -->
+                        <div class="absolute left-1/2 transform -translate-x-1/2 mt-3 w-48 bg-[#170908] text-white z-10 rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                        <a href="#" class="block py-2 px-4 hover:bg-[#f7dbdb] hover:text-[#170908] transition-colors border-b border-[#f7dbdb]/10">Events Calendar</a>
+                        <a href="#" class="block py-2 px-4 hover:bg-[#f7dbdb] hover:text-[#170908] transition-colors border-b border-[#f7dbdb]/10">Study Group Finder</a>
+                        <a href="#" class="block py-2 px-4 hover:bg-[#f7dbdb] hover:text-[#170908] transition-colors border-b border-[#f7dbdb]/10">Course Reviews</a>
+                        <a href="#" class="block py-2 px-4 hover:bg-[#f7dbdb] hover:text-[#170908] transition-colors border-b border-[#f7dbdb]/10">Course Notes</a>
+                        <a href="#" class="block py-2 px-4 hover:bg-[#f7dbdb] hover:text-[#170908] transition-colors border-b border-[#f7dbdb]/10">Campus News</a>
+                        <a href="#" class="block py-2 px-4 hover:bg-[#f7dbdb] hover:text-[#170908] transition-colors border-b border-[#f7dbdb]/10">Club Activities</a>
+                        <a href="#" class="block py-2 px-4 hover:bg-[#f7dbdb] hover:text-[#170908] transition-colors">Student Marketplace</a>
+                        </div>
+                        </div>
+
+                    <a href="#" class="flex flex-col items-center py-3 px-10 relative group overflow-hidden">
+                        <!-- Text Content (above the square) -->
+                        <span class="text-sm relative z-10 text-[#ffffff] font-bold ">Profile</span>
+                        
+                        <!-- Red Square Background -->
+                        <div class="absolute inset-0 bg-[#170908] transform -translate-x-full 
+                                    opacity-0 group-hover:opacity-100 group-hover:translate-x-0 
+                                    transition-all duration-300 z-0"></div>
+                        
+                        <!-- Bottom Line Indicator -->
+                        <span class="absolute bottom-2 left-1/2 w-0 h-[1px] bg-[#f7dbdb] 
+                        transform -translate-x-1/2
+                        transition-all duration-300 group-hover:w-3/4"></span>
+                    </a>
+                    
+                    
+                    <a href="#" class="flex flex-col items-center py-3 px-10 relative group overflow-hidden">
+                        <!-- Text Content (above the square) -->
+                        <span class="text-sm relative z-10 text-[#ffffff] font-bold  ">Help</span>
+                        
+                        <!-- Red Square Background -->
+                        <div class="absolute inset-0 bg-[#170908] transform -translate-x-full 
+                                    opacity-0 group-hover:opacity-100 group-hover:translate-x-0 
+                                    transition-all duration-300 z-0"></div>
+                        
+                        <!-- Bottom Line Indicator -->
+                        <span class="absolute bottom-2 left-1/2 w-0 h-[1px] bg-[#f7dbdb] 
+                        transform -translate-x-1/2
+                        transition-all duration-300 group-hover:w-3/4"></span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <div class="pb-16 md:pb-0"></div>
     </header>
 
     <!--main content-->
